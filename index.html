@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KidsWallet - Family Allowance Management</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 0;
+            color: white;
+        }
+        
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        
+        .hero {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            margin: 0 20px 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            text-align: center;
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 30px 20px;
+            background: #f8f9fa;
+            border-radius: 15px;
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .feature h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .feature p {
+            color: #7f8c8d;
+        }
+        
+        .download-section {
+            text-align: center;
+            padding: 60px 0;
+            color: white;
+        }
+        
+        .download-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .download-section p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        
+        .app-store-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .app-store-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            border: 2px solid rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .app-store-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: rgba(255,255,255,0.8);
+        }
+        
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                margin: 0 10px 40px;
+                padding: 40px 20px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">💰 KidsWallet</div>
+            <div class="tagline">Teaching kids financial responsibility, one allowance at a time</div>
+        </header>
+        
+        <main>
+            <section class="hero">
+                <h1>Smart Allowance Management for Modern Families</h1>
+                <p>KidsWallet helps parents manage their children's allowances digitally while teaching kids valuable money management skills. Track earnings, spending, and savings all in one secure, family-friendly app.</p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                        <h3>Family Management</h3>
+                        <p>Create family groups where parents can manage multiple children's allowances and track their financial progress.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">💳</div>
+                        <h3>Digital Allowances</h3>
+                        <p>No more physical cash! Parents can add allowances digitally, and kids can track their virtual wallet balance.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">📊</div>
+                        <h3>Transaction History</h3>
+                        <p>Complete history of earnings, spending, and savings to help kids understand their money habits.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Secure & Safe</h3>
+                        <p>Built with Firebase security, ensuring your family's financial data is protected and private.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">🌍</div>
+                        <h3>Multi-Language</h3>
+                        <p>Supports English, Spanish, and Hebrew to serve families around the world.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">📱</div>
+                        <h3>Easy to Use</h3>
+                        <p>Simple, intuitive interface designed for both parents and children to use together.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="download-section">
+                <h2>Get KidsWallet Today</h2>
+                <p>Start teaching your kids financial responsibility with our easy-to-use allowance management app.</p>
+                
+                <div class="app-store-buttons">
+                    <a href="#" class="app-store-btn">📱 Coming to App Store</a>
+                    <a href="#" class="app-store-btn">🤖 Coming to Google Play</a>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 KidsWallet. All rights reserved.</p>
+            <div>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="mailto:support@kidswallet.app">Contact</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 
